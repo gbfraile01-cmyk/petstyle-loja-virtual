@@ -1,0 +1,573 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pet&Style - Loja para Pets</title>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="bg-purple-600 text-white">
+
+        <div class="max-w-6xl mx-auto px-6 py-4
+                    flex flex-col
+                    sm:flex-row
+                    sm:items-center
+                    sm:justify-between">
+
+            <!-- Logo -->
+            <h1 class="text-2xl font-bold">
+                🐾 Pet&Style
+            </h1>
+
+            <!-- Menu -->
+            <nav class="mt-4 sm:mt-0">
+
+                <ul class="flex flex-col sm:flex-row gap-4">
+
+                    <li>
+                        <a href="#inicio"
+                           class="hover:text-purple-200 transition">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#produtos"
+                           class="hover:text-purple-200 transition">
+                            Produtos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#depoimentos"
+                           class="hover:text-purple-200 transition">
+                            Depoimentos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contato"
+                           class="hover:text-purple-200 transition">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section id="inicio" class="bg-purple-100 py-16 px-6">
+
+        <div class="max-w-6xl mx-auto
+                    flex flex-col
+                    md:flex-row
+                    items-center
+                    gap-10">
+
+            <!-- Texto -->
+            <div class="md:w-1/2">
+
+                <p class="text-purple-600 font-semibold mb-3">
+                    Tudo para o seu melhor amigo 🐾
+                </p>
+
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Estilo, conforto e diversão para seu pet!
+                </h2>
+
+                <p class="text-gray-600 text-lg mb-6">
+                    Encontre produtos especiais para deixar seu
+                    cachorro ou gato ainda mais feliz.
+                </p>
+
+                <a href="#produtos"
+                   class="inline-block bg-purple-600
+                          text-white px-6 py-3
+                          rounded-lg
+                          hover:bg-purple-700
+                          transition">
+
+                    Ver produtos
+
+                </a>
+
+            </div>
+
+
+            <!-- Imagem -->
+            <div class="md:w-1/2">
+
+                <img
+                    src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=80"
+                    alt="Cachorro da Pet&Style"
+                    class="rounded-2xl shadow-lg w-full"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PRODUTOS
+    ========================== -->
+    <section id="produtos" class="py-16 px-6">
+
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-3">
+                Nossos Produtos
+            </h2>
+
+            <p class="text-gray-600 text-center mb-10">
+                Produtos escolhidos para o conforto e diversão do seu pet.
+            </p>
+
+
+            <!-- GRID DOS PRODUTOS -->
+            <div class="grid
+                        grid-cols-1
+                        sm:grid-cols-2
+                        md:grid-cols-2
+                        lg:grid-cols-4
+                        gap-6">
+
+
+                <!-- PRODUTO 1 -->
+                <div class="bg-white rounded-xl shadow-md
+                            overflow-hidden
+                            hover:shadow-xl
+                            transition">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?auto=format&fit=crop&w=600&q=80"
+                        alt="Cama para cachorro"
+                        class="w-full h-48 object-cover"
+                    >
+
+                    <div class="p-5">
+
+                        <h3 class="text-xl font-bold mb-2">
+                            Cama Premium
+                        </h3>
+
+                        <p class="text-gray-600 mb-4">
+                            Conforto para seu pet descansar.
+                        </p>
+
+                        <p class="text-purple-600 font-bold text-lg mb-4">
+                            R$ 129,90
+                        </p>
+
+                        <button
+                            class="w-full bg-purple-600
+                                   text-white py-2
+                                   rounded-lg
+                                   hover:bg-purple-700
+                                   transition">
+
+                            Comprar
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUTO 2 -->
+                <div class="bg-white rounded-xl shadow-md
+                            overflow-hidden
+                            hover:shadow-xl
+                            transition">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1545249390-6bdfa286032f?auto=format&fit=crop&w=600&q=80"
+                        alt="Arranhador para gato"
+                        class="w-full h-48 object-cover"
+                    >
+
+                    <div class="p-5">
+
+                        <h3 class="text-xl font-bold mb-2">
+                            Arranhador
+                        </h3>
+
+                        <p class="text-gray-600 mb-4">
+                            Diversão garantida para seu gato.
+                        </p>
+
+                        <p class="text-purple-600 font-bold text-lg mb-4">
+                            R$ 89,90
+                        </p>
+
+                        <button
+                            class="w-full bg-purple-600
+                                   text-white py-2
+                                   rounded-lg
+                                   hover:bg-purple-700
+                                   transition">
+
+                            Comprar
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUTO 3 -->
+                <div class="bg-white rounded-xl shadow-md
+                            overflow-hidden
+                            hover:shadow-xl
+                            transition">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1582798358481-d199fb734f93?auto=format&fit=crop&w=600&q=80"
+                        alt="Brinquedo para cachorro"
+                        class="w-full h-48 object-cover"
+                    >
+
+                    <div class="p-5">
+
+                        <h3 class="text-xl font-bold mb-2">
+                            Brinquedo Interativo
+                        </h3>
+
+                        <p class="text-gray-600 mb-4">
+                            Diversão para deixar seu pet ativo.
+                        </p>
+
+                        <p class="text-purple-600 font-bold text-lg mb-4">
+                            R$ 49,90
+                        </p>
+
+                        <button
+                            class="w-full bg-purple-600
+                                   text-white py-2
+                                   rounded-lg
+                                   hover:bg-purple-700
+                                   transition">
+
+                            Comprar
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUTO 4 -->
+                <div class="bg-white rounded-xl shadow-md
+                            overflow-hidden
+                            hover:shadow-xl
+                            transition">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1567612529009-afe25813a7c8?auto=format&fit=crop&w=600&q=80"
+                        alt="Kit para cachorro"
+                        class="w-full h-48 object-cover"
+                    >
+
+                    <div class="p-5">
+
+                        <h3 class="text-xl font-bold mb-2">
+                            Kit Pet
+                        </h3>
+
+                        <p class="text-gray-600 mb-4">
+                            Tudo o que seu pet precisa.
+                        </p>
+
+                        <p class="text-purple-600 font-bold text-lg mb-4">
+                            R$ 159,90
+                        </p>
+
+                        <button
+                            class="w-full bg-purple-600
+                                   text-white py-2
+                                   rounded-lg
+                                   hover:bg-purple-700
+                                   transition">
+
+                            Comprar
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DEPOIMENTOS
+    ========================== -->
+    <section id="depoimentos"
+             class="bg-purple-100 py-16 px-6">
+
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-3">
+                O que nossos clientes dizem
+            </h2>
+
+            <p class="text-gray-600 text-center mb-10">
+                Veja algumas opiniões dos nossos clientes.
+            </p>
+
+
+            <!-- GRID DEPOIMENTOS -->
+            <div class="grid
+                        grid-cols-1
+                        md:grid-cols-3
+                        gap-6">
+
+
+                <!-- DEPOIMENTO 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+
+                    <div class="text-yellow-500 text-xl mb-3">
+                        ★★★★★
+                    </div>
+
+                    <p class="text-gray-600 mb-4">
+                        "A cama é muito confortável. Meu cachorro adorou
+                        e agora passa o dia descansando nela!"
+                    </p>
+
+                    <p class="font-bold">
+                        — Mariana
+                    </p>
+
+                </div>
+
+
+                <!-- DEPOIMENTO 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+
+                    <div class="text-yellow-500 text-xl mb-3">
+                        ★★★★★
+                    </div>
+
+                    <p class="text-gray-600 mb-4">
+                        "O arranhador chegou rápido e meu gato não sai
+                        mais dele. Gostei muito da qualidade."
+                    </p>
+
+                    <p class="font-bold">
+                        — Lucas
+                    </p>
+
+                </div>
+
+
+                <!-- DEPOIMENTO 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+
+                    <div class="text-yellow-500 text-xl mb-3">
+                        ★★★★★
+                    </div>
+
+                    <p class="text-gray-600 mb-4">
+                        "Gostei muito dos produtos e do atendimento.
+                        Com certeza vou comprar novamente."
+                    </p>
+
+                    <p class="font-bold">
+                        — Ana
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTATO
+    ========================== -->
+    <section id="contato" class="py-16 px-6">
+
+        <div class="max-w-5xl mx-auto">
+
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">
+                Entre em contato
+            </h2>
+
+
+            <div class="grid
+                        grid-cols-1
+                        md:grid-cols-2
+                        gap-10">
+
+
+                <!-- INFORMAÇÕES -->
+                <div>
+
+                    <h3 class="text-2xl font-bold mb-5">
+                        Fale conosco 🐾
+                    </h3>
+
+                    <p class="text-gray-600 mb-4">
+                        📧 contato@petstyle.com
+                    </p>
+
+                    <p class="text-gray-600 mb-4">
+                        📱 (11) 99999-9999
+                    </p>
+
+                    <p class="text-gray-600">
+                        📍 São Paulo - SP
+                    </p>
+
+                </div>
+
+
+                <!-- FORMULÁRIO -->
+                <form class="space-y-4">
+
+                    <div>
+
+                        <label
+                            for="nome"
+                            class="block font-semibold mb-2">
+
+                            Nome
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            placeholder="Digite seu nome"
+                            class="w-full border border-gray-300
+                                   rounded-lg px-4 py-3
+                                   focus:outline-none
+                                   focus:ring-2
+                                   focus:ring-purple-500"
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label
+                            for="email"
+                            class="block font-semibold mb-2">
+
+                            E-mail
+
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Digite seu e-mail"
+                            class="w-full border border-gray-300
+                                   rounded-lg px-4 py-3
+                                   focus:outline-none
+                                   focus:ring-2
+                                   focus:ring-purple-500"
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label
+                            for="mensagem"
+                            class="block font-semibold mb-2">
+
+                            Mensagem
+
+                        </label>
+
+                        <textarea
+                            id="mensagem"
+                            rows="5"
+                            placeholder="Digite sua mensagem"
+                            class="w-full border border-gray-300
+                                   rounded-lg px-4 py-3
+                                   focus:outline-none
+                                   focus:ring-2
+                                   focus:ring-purple-500">
+                        </textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="w-full bg-purple-600
+                               text-white px-6 py-3
+                               rounded-lg
+                               font-semibold
+                               hover:bg-purple-700
+                               transition">
+
+                        Enviar mensagem
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="bg-purple-600 text-white text-center py-6">
+
+        <p>
+            © 2026 Pet&Style - Todos os direitos reservados.
+        </p>
+
+        <p class="text-purple-200 text-sm mt-2">
+            Feito com carinho para os amantes de pets 🐶🐱
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+```
